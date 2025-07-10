@@ -10,7 +10,8 @@ namespace SRB_COMERCIALPDV.Models
         
         SrbVenda
     {
-        public int SrbVendaId { get; set; }       
+        public int SrbVendaId { get; set; }          
+        public string SrbCod { get; set; }
         public int SrbQuantidade { get; set; }
         public decimal SrbPrecoUnitario { get; set; }
         public DateTime SrbDataVenda { get; set; }

@@ -32,7 +32,7 @@ namespace SRB_COMERCIALPDV
         {
             Forms formulario = new Forms();
             formulario.StartPosition = FormStartPosition.CenterScreen;
-            formulario.ShowDialog(this); // Abre modal, bloqueia até fechar
+            formulario.Show(); // Abre modal, bloqueia até fechar
             // Se preferir não modal, use formulario.Show();
         }
 

@@ -106,6 +106,9 @@
     <Compile Include="Controllers\SrbFornecedorController.cs" />
     <Compile Include="Controllers\SrbProdutoController.cs" />
     <Compile Include="Controllers\SrbVendaController.cs" />
+    <Compile Include="Controls\RoundedTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Helpers\ValidacaoHelper.cs" />
     <Compile Include="Models\SrbCidade.cs" />
     <Compile Include="Models\SrbCliente.cs" />

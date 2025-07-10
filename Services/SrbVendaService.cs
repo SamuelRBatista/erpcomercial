@@ -31,7 +31,8 @@ namespace SRB_COMERCIALPDV.Services
 
 
                     MySqlCommand command = new MySqlCommand(query, connection);
-                    command.Parameters.AddWithValue("@VendaId", venda.SrbVendaId);                  
+                    command.Parameters.AddWithValue("@VendaId", venda.SrbVendaId);
+                    command.Parameters.AddWithValue("@Codigo", venda.SrbCod);
                     command.Parameters.AddWithValue("@Quantidade", venda.SrbQuantidade);
                     command.Parameters.AddWithValue("@PrecoUnitario", venda.SrbPrecoUnitario);
                     command.Parameters.AddWithValue("@DataVenda", venda.SrbDataVenda);

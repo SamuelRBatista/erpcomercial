@@ -14,19 +14,19 @@ namespace SRB_COMERCIALPDV.Helpers
 
         public static bool ValidaCampos(TextBox txtCod, TextBox txtEan, TextBox txtNome, TextBox txtDescricao, TextBox txtPreco, TextBox txtQuantidade, TextBox txtValidade, TextBox txtNcm, TextBox txtCest, ComboBox cmbCategoria)
         {
-            if (txtCod != null && (string.IsNullOrWhiteSpace(txtCod.Text) || !txtCod.Text.All(char.IsDigit)))
+            if (txtCod != null && string.IsNullOrWhiteSpace(txtCod.Text))
             {
                 MessageBox.Show("Por favor, insira o código do produto.", "Erro de entrada", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtCod.Focus();
                 return false;
             }
 
-            if (txtEan != null && (string.IsNullOrWhiteSpace(txtEan.Text) || !Regex.IsMatch(txtEan.Text, @"^\d{13}$")))
-            {
-                MessageBox.Show("Por favor, insira um EAN válido com 13 dígitos numéricos.", "Erro de entrada", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtEan.Focus();
-                return false;
-            }
+            //if (txtEan != null && (string.IsNullOrWhiteSpace(txtEan.Text) || !Regex.IsMatch(txtEan.Text, @"^\d{13}$")))
+            //{
+            //    MessageBox.Show("Por favor, insira um EAN válido com 13 dígitos numéricos.", "Erro de entrada", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    txtEan.Focus();
+            //    return false;
+            //}
 
             if (txtNome != null && (string.IsNullOrWhiteSpace(txtNome.Text) || txtNome.Text.Length > 100))
             {

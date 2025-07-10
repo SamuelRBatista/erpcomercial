@@ -7,25 +7,33 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SRB_COMERCIALPDV.Controls;
 
 namespace SRB_COMERCIALPDV.Views
 {
     public partial class SrbFormVenda : Form
     {
-
         private SrbProdutoController produtoController;
         private SrbVendaController vendaController;
         private SrbCategoriaController categoriaController;
         private SrbFormProduto formProduto;
 
+        private decimal totalVendas = 0;
+        private string cupomConteudo = string.Empty;
+        private PrintDialog printDialog;
+        private PrintPreviewDialog printPreview;
+
+
         public SrbFormVenda()
         {
-            InitializeComponent();           
+            InitializeComponent();
             produtoController = new SrbProdutoController();
             vendaController = new SrbVendaController();
             categoriaController = new SrbCategoriaController();
@@ -39,7 +47,7 @@ namespace SRB_COMERCIALPDV.Views
 
         private void SrbFormVenda_Load(object sender, EventArgs e)
         {
-            ConfiguraGridViewVendas();
+            ConfiguraGridViewVendas();         
         }
 
         private void txtEan_TextChanged(object sender, EventArgs e)
@@ -50,7 +58,6 @@ namespace SRB_COMERCIALPDV.Views
 
             if (produtos != null && produtos.Count > 0)
             {
-
                 SrbProduto produto = produtos[0];
                 if (produto.SrbQuantidade > 0)
                 {
@@ -66,7 +73,7 @@ namespace SRB_COMERCIALPDV.Views
                     LimparCamposFormulario();
                     txtEan.Focus();
                     return;
-                }               
+                }
             }
             else
             {
@@ -76,56 +83,48 @@ namespace SRB_COMERCIALPDV.Views
 
         private void LimparCamposFormulario()
         {
+            txtEan.Text = "";
             txtCod.Text = "";
             txtNome.Text = "";
             txtDescricao.Text = "";
             txtPreco.Text = "";
             txtQuantidade.Text = "";
-            lblTotalPagar.Text = "";
+            // txtTotal.Text = ""; // ← agora deixamos isso fora
         }
-
-        private decimal totalVendas = 0;
 
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
-            bool camposValidos = ValidacaoHelper.ValidaCampos(txtCod, txtEan, txtNome, txtDescricao, txtPreco, txtQuantidade, null, null, null, null);
+            bool camposValidos = ValidacaoHelper.ValidaCampos(txtEan, txtCod, txtNome, txtDescricao, txtPreco, txtQuantidade, null, null, null, null);
 
             if (!camposValidos)
-            {
                 return;
-            }
 
             int id = int.Parse(txtId.Text);
-            int codigo = int.Parse(txtCod.Text);
+            string codigo = txtCod.Text;
             string nome = txtNome.Text;
             string descricao = txtDescricao.Text;
-
             decimal preco = decimal.Parse(txtPreco.Text, NumberStyles.Currency);
-
             int quantidade = int.Parse(txtQuantidade.Text);
 
             decimal subtotal = preco * quantidade;
 
-            dataGridViewVendas.Rows.Add(id, nome, descricao, preco.ToString("C2"), quantidade);
+            dataGridViewVendas.Rows.Add(id, codigo, nome, descricao, preco.ToString("C2"), quantidade);
 
-            // Acumula o valor da venda no total de vendas
             totalVendas += subtotal;
-            lblTotalPagar.Text = totalVendas.ToString("C2");
+            txtTotal.Text = totalVendas.ToString("C2");
         }
 
         private void ConfiguraGridViewVendas()
         {
-            // Configurar as colunas da DataGridView
-            dataGridViewVendas.ColumnCount = 5; // Número de colunas visíveis
+            dataGridViewVendas.ColumnCount = 6;
 
-            // Configurar o cabeçalho das colunas
             dataGridViewVendas.Columns[0].Name = "Id";
-            dataGridViewVendas.Columns[1].Name = "Nome";
-            dataGridViewVendas.Columns[2].Name = "Descrição";
-            dataGridViewVendas.Columns[3].Name = "Preço";
-            dataGridViewVendas.Columns[4].Name = "Quantidade";
+            dataGridViewVendas.Columns[1].Name = "Código";
+            dataGridViewVendas.Columns[2].Name = "Nome";
+            dataGridViewVendas.Columns[3].Name = "Descrição";
+            dataGridViewVendas.Columns[4].Name = "Preço";
+            dataGridViewVendas.Columns[5].Name = "Quantidade";
 
-            // Estilizar a DataGridView para parecer um cupom fiscal
             dataGridViewVendas.ColumnHeadersDefaultCellStyle.BackColor = Color.DarkSlateGray;
             dataGridViewVendas.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
             dataGridViewVendas.ColumnHeadersDefaultCellStyle.Font = new Font("Arial", 12, FontStyle.Bold);
@@ -138,7 +137,6 @@ namespace SRB_COMERCIALPDV.Views
 
             dataGridViewVendas.EnableHeadersVisualStyles = false;
             dataGridViewVendas.RowHeadersVisible = false;
-
             dataGridViewVendas.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridViewVendas.MultiSelect = false;
             dataGridViewVendas.AllowUserToAddRows = false;
@@ -149,11 +147,9 @@ namespace SRB_COMERCIALPDV.Views
 
             dataGridViewVendas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewVendas.BackgroundColor = Color.White;
-
             dataGridViewVendas.BorderStyle = BorderStyle.None;
             dataGridViewVendas.CellBorderStyle = DataGridViewCellBorderStyle.None;
             dataGridViewVendas.GridColor = Color.White;
-
             dataGridViewVendas.DefaultCellStyle.SelectionBackColor = Color.LightGray;
             dataGridViewVendas.DefaultCellStyle.SelectionForeColor = Color.Black;
         }
@@ -169,38 +165,34 @@ namespace SRB_COMERCIALPDV.Views
             decimal pago;
 
             CultureInfo culture = new CultureInfo("pt-BR");
-            pagoStr = pagoStr.Replace('.', ',');
+
+            pagoStr = pagoStr.Replace(".", "");
             if (decimal.TryParse(pagoStr, NumberStyles.Currency, culture, out pago))
             {
-                txtPago.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", pago);
+                txtPago.Text = string.Format(culture, "{0:C}", pago);
+
                 decimal totalPagar = totalVendas;
-                decimal troco = pago - totalPagar;  // Calcula o troco aqui
-                lblTroco.Text = troco.ToString("C2");
-
-                SrbVendaController vendaController = new SrbVendaController();
-
-                // Log dos nomes das colunas disponíveis
-                foreach (DataGridViewColumn column in dataGridViewVendas.Columns)
-                {
-                    Console.WriteLine($"Column Name: {column.Name}");
-                }
+                decimal troco = pago - totalPagar;
+                lblTroco.Text = troco.ToString("C2", culture);
 
                 foreach (DataGridViewRow row in dataGridViewVendas.Rows)
                 {
-                    if (row.Cells["Id"].Value != null) // Verifica se a linha não está vazia
+                    if (row.Cells["Id"].Value != null)
                     {
                         int id;
                         int quantidadeVendida;
                         decimal precoUnitario;
 
-                        // Validação e parsing dos valores das células
                         bool idValido = int.TryParse(row.Cells["Id"].Value.ToString(), out id);
                         bool quantidadeValida = int.TryParse(row.Cells["Quantidade"].Value.ToString(), out quantidadeVendida);
-                        bool precoValido = decimal.TryParse(row.Cells["Preço"].Value.ToString().Replace('.', ','), NumberStyles.Currency, culture, out precoUnitario);
+                        string precoTexto = row.Cells["Preço"].Value.ToString().Trim();
+
+                        precoTexto = precoTexto.Replace("R$", "").Replace(" ", "").Replace(".", "").Replace(",", ".");
+                        bool precoValido = decimal.TryParse(precoTexto, NumberStyles.Number, CultureInfo.InvariantCulture, out precoUnitario);
 
                         if (!idValido || !quantidadeValida || !precoValido)
                         {
-                            MessageBox.Show("Erro ao processar os dados da venda. Verifique se todos os valores estão corretos.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("Erro ao processar os dados da venda. Verifique os valores.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             return;
                         }
 
@@ -217,18 +209,55 @@ namespace SRB_COMERCIALPDV.Views
                                 SrbPrecoUnitario = precoUnitario,
                                 SrbDataVenda = DateTime.Now,
                                 SrbValorPago = pago,
-                                SrbTroco = troco  // Usa o troco calculado
+                                SrbTroco = troco
                             };
 
-                            vendaController.AdicionarVenda(venda); // Salva os dados da venda no banco de dados
-                            LimparCamposFormulario();
+                            vendaController.AdicionarVenda(venda);
                         }
                     }
                 }
 
+                // Monta o conteúdo do cupom fiscal
+                StringBuilder cupom = new StringBuilder();
+                cupom.AppendLine("         SRB COMERCIAL - CUPOM FISCAL");
+                cupom.AppendLine("============================================");
+                cupom.AppendLine($"Data: {DateTime.Now:dd/MM/yyyy HH:mm}");
+                cupom.AppendLine("--------------------------------------------");
+                cupom.AppendLine("PRODUTO         QTD  VL.UNIT   SUBTOTAL");
+
+                foreach (DataGridViewRow row in dataGridViewVendas.Rows)
+                {
+                    if (row.Cells["Id"].Value != null)
+                    {
+                        string nome = row.Cells["Nome"].Value?.ToString() ?? "";
+                        int quantidade = int.Parse(row.Cells["Quantidade"].Value.ToString());
+                        string precoStr = row.Cells["Preço"].Value.ToString().Trim();
+
+                        precoStr = precoStr.Replace("R$", "").Replace(" ", "").Replace(".", "").Replace(",", ".");
+                        decimal preco = decimal.Parse(precoStr, CultureInfo.InvariantCulture);
+                        decimal subtotal = quantidade * preco;
+
+                        string linha = $"{nome.PadRight(15).Substring(0, 15)} {quantidade.ToString().PadLeft(3)}  {preco.ToString("C", culture).PadLeft(8)} {subtotal.ToString("C", culture).PadLeft(9)}";
+                        cupom.AppendLine(linha);
+                    }
+                }
+
+                cupom.AppendLine("--------------------------------------------");
+                cupom.AppendLine($"TOTAL: {totalVendas.ToString("C2", culture)}");
+                cupom.AppendLine($"PAGO : {pago.ToString("C2", culture)}");
+                cupom.AppendLine($"TROCO: {troco.ToString("C2", culture)}");
+                cupom.AppendLine("============================================");
+                cupom.AppendLine("      Obrigado pela sua preferência!");
+
+                cupomConteudo = cupom.ToString();
+                ImprimirCupom();
+
                 MessageBox.Show("Venda confirmada com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                 dataGridViewVendas.Rows.Clear();
                 LimparCamposFormulario();
+                txtTotal.Text = "";
+                totalVendas = 0;
                 formProduto?.RecarregarProdutos();
             }
             else
@@ -238,10 +267,82 @@ namespace SRB_COMERCIALPDV.Views
             }
         }
 
+        private void ImprimirCupom()
+        {
+            PrintDocument printDoc = new PrintDocument();
+            printDoc.PrintPage += new PrintPageEventHandler(PrintPage);
 
+            printDialog = new PrintDialog();
+            printDialog.Document = printDoc;
+            printDialog.UseEXDialog = true;
 
+            printPreview = new PrintPreviewDialog();
+            printPreview.Document = printDoc;
+            printPreview.Width = 800;
+            printPreview.Height = 600;
 
+            DialogResult result = MessageBox.Show("Deseja visualizar o cupom antes de imprimir?", "Impressão", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
 
+            if (result == DialogResult.Yes)
+            {
+                printPreview.ShowDialog();
+            }
+            else if (result == DialogResult.No)
+            {
+                if (printDialog.ShowDialog() == DialogResult.OK)
+                {
+                    printDoc.Print();
+                }
+            }
+            else if (result == DialogResult.Cancel)
+            {
+                DialogResult salvarPdf = MessageBox.Show("Deseja salvar o cupom em PDF?", "Salvar PDF", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (salvarPdf == DialogResult.Yes)
+                {
+                    SalvarCupomComoPdf();
+                }
+            }
+        }
+
+        private void SalvarCupomComoPdf()
+        {
+            PrintDocument pdfDoc = new PrintDocument();
+            pdfDoc.PrintPage += new PrintPageEventHandler(PrintPage);
+
+            pdfDoc.PrinterSettings.PrinterName = "Microsoft Print to PDF";
+
+            SaveFileDialog salvar = new SaveFileDialog();
+            salvar.Filter = "PDF Files|*.pdf";
+            salvar.Title = "Salvar cupom como PDF";
+            salvar.FileName = "CupomFiscal.pdf";
+
+            if (salvar.ShowDialog() == DialogResult.OK)
+            {
+                pdfDoc.PrinterSettings.PrintToFile = true;
+                pdfDoc.PrinterSettings.PrintFileName = salvar.FileName;
+
+                try
+                {
+                    pdfDoc.Print();
+                    MessageBox.Show("Cupom salvo em PDF com sucesso!", "PDF", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Erro ao salvar PDF: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void PrintPage(object sender, PrintPageEventArgs e)
+        {
+            Font fonte = new Font("Courier New", 10);
+            float linhaY = 10;
+
+            foreach (string linha in cupomConteudo.Split('\n'))
+            {
+                e.Graphics.DrawString(linha, fonte, Brushes.Black, 10, linhaY);
+                linhaY += 20;
+            }
+        }
     }
 }
-
