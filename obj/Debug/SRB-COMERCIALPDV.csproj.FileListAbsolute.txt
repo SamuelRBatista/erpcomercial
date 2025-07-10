@@ -1,0 +1,191 @@
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\obj\Debug\SRB-COMERCIALPDV.csproj.AssemblyReference.cache
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\obj\Debug\SRB_COMERCIALPDV.Properties.Resources.resources
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\obj\Debug\SRB-COMERCIALPDV.csproj.GenerateResource.cache
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\obj\Debug\SRB-COMERCIALPDV.csproj.CoreCompileInputs.cache
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\bin\Debug\SRB-COMERCIALPDV.exe.config
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\bin\Debug\SRB-COMERCIALPDV.exe
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\bin\Debug\SRB-COMERCIALPDV.pdb
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\bin\Debug\Google.Protobuf.dll
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\bin\Debug\MySql.Data.dll
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\bin\Debug\System.Buffers.dll
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\bin\Debug\System.Memory.dll
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\bin\Debug\ZstdSharp.dll
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\bin\Debug\Google.Protobuf.pdb
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\bin\Debug\Google.Protobuf.xml
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\bin\Debug\MySql.Data.xml
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\bin\Debug\System.Buffers.xml
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\bin\Debug\System.Memory.xml
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\obj\Debug\SRB-COMERCIALPDV.csproj.SuggestedBindingRedirects.cache
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\obj\Debug\SRB-COMERCIALPDV.exe.config
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\obj\Debug\SRB-COME.1BEFA819.Up2Date
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\obj\Debug\SRB-COMERCIALPDV.exe
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\obj\Debug\SRB-COMERCIALPDV.pdb
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\obj\Debug\SRB_COMERCIALPDV.Views.SrbFormProduto.resources
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\SRB-COMERCIALPDV\obj\Debug\SRB_COMERCIALPDV.SrbFormPainel.resources
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\bin\Debug\SRB-COMERCIALPDV.exe.config
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\bin\Debug\SRB-COMERCIALPDV.exe
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\bin\Debug\SRB-COMERCIALPDV.pdb
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\bin\Debug\System.Buffers.dll
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\bin\Debug\System.Memory.dll
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\bin\Debug\Google.Protobuf.pdb
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\bin\Debug\Google.Protobuf.xml
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\bin\Debug\MySql.Data.xml
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\obj\Debug\SRB-COMERCIALPDV.csproj.AssemblyReference.cache
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\obj\Debug\SRB-COMERCIALPDV.csproj.SuggestedBindingRedirects.cache
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\obj\Debug\SRB-COMERCIALPDV.exe.config
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\obj\Debug\SRB_COMERCIALPDV.Properties.Resources.resources
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\obj\Debug\SRB_COMERCIALPDV.Views.SrbFormProduto.resources
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\obj\Debug\SRB_COMERCIALPDV.SrbFormPainel.resources
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\obj\Debug\SRB-COMERCIALPDV.csproj.GenerateResource.cache
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\obj\Debug\SRB-COMERCIALPDV.csproj.CoreCompileInputs.cache
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\obj\Debug\SRB-COME.1BEFA819.Up2Date
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\obj\Debug\SRB-COMERCIALPDV.exe
+C:\Users\Samuel R Batista\Desktop\Dev\SRB-COMERCIALPDV\obj\Debug\SRB-COMERCIALPDV.pdb
+C:\Users\Samuel R Batista\Desktop\Dev\srb-comercialwf\bin\Debug\SRB-COMERCIALPDV.exe.config
+C:\Users\Samuel R Batista\Desktop\Dev\srb-comercialwf\bin\Debug\SRB-COMERCIALPDV.exe
+C:\Users\Samuel R Batista\Desktop\Dev\srb-comercialwf\bin\Debug\SRB-COMERCIALPDV.pdb
+C:\Users\Samuel R Batista\Desktop\Dev\srb-comercialwf\bin\Debug\System.Buffers.dll
+C:\Users\Samuel R Batista\Desktop\Dev\srb-comercialwf\bin\Debug\System.Memory.dll
+C:\Users\Samuel R Batista\Desktop\Dev\srb-comercialwf\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Samuel R Batista\Desktop\Dev\srb-comercialwf\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Samuel R Batista\Desktop\Dev\srb-comercialwf\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Samuel R Batista\Desktop\Dev\srb-comercialwf\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\Samuel R Batista\Desktop\Dev\srb-comercialwf\bin\Debug\Google.Protobuf.pdb
+C:\Users\Samuel R Batista\Desktop\Dev\srb-comercialwf\bin\Debug\Google.Protobuf.xml
+C:\Users\Samuel R Batista\Desktop\Dev\srb-comercialwf\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Samuel R Batista\Desktop\Dev\srb-comercialwf\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Samuel R Batista\Desktop\Dev\srb-comercialwf\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Samuel R Batista\Desktop\Dev\srb-comercialwf\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Samuel R Batista\Desktop\Dev\srb-comercialwf\bin\Debug\MySql.Data.xml
+C:\Users\Samuel R Batista\Desktop\Dev\srb-comercialwf\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Samuel R Batista\Desktop\Dev\srb-comercialwf\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Samuel R Batista\Desktop\Dev\srb-comercialwf\obj\Debug\SRB-COMERCIALPDV.csproj.AssemblyReference.cache
+C:\Users\Samuel R Batista\Desktop\Dev\srb-comercialwf\obj\Debug\SRB-COMERCIALPDV.csproj.SuggestedBindingRedirects.cache
+C:\Users\Samuel R Batista\Desktop\Dev\srb-comercialwf\obj\Debug\SRB-COMERCIALPDV.exe.config
+C:\Users\Samuel R Batista\Desktop\Dev\srb-comercialwf\obj\Debug\SRB_COMERCIALPDV.Properties.Resources.resources
+C:\Users\Samuel R Batista\Desktop\Dev\srb-comercialwf\obj\Debug\SRB_COMERCIALPDV.Views.SrbFormProduto.resources
+C:\Users\Samuel R Batista\Desktop\Dev\srb-comercialwf\obj\Debug\SRB_COMERCIALPDV.SrbFormPainel.resources
+C:\Users\Samuel R Batista\Desktop\Dev\srb-comercialwf\obj\Debug\SRB-COMERCIALPDV.csproj.GenerateResource.cache
+C:\Users\Samuel R Batista\Desktop\Dev\srb-comercialwf\obj\Debug\SRB-COMERCIALPDV.csproj.CoreCompileInputs.cache
+C:\Users\Samuel R Batista\Desktop\Dev\srb-comercialwf\obj\Debug\SRB-COME.1BEFA819.Up2Date
+C:\Users\Samuel R Batista\Desktop\Dev\srb-comercialwf\obj\Debug\SRB-COMERCIALPDV.exe
+C:\Users\Samuel R Batista\Desktop\Dev\srb-comercialwf\obj\Debug\SRB-COMERCIALPDV.pdb
+C:\Users\Samuel R Batista\Desktop\Dev\erpcomercialsrb\bin\Debug\SRB-COMERCIALPDV.exe.config
+C:\Users\Samuel R Batista\Desktop\Dev\erpcomercialsrb\bin\Debug\SRB-COMERCIALPDV.exe
+C:\Users\Samuel R Batista\Desktop\Dev\erpcomercialsrb\bin\Debug\SRB-COMERCIALPDV.pdb
+C:\Users\Samuel R Batista\Desktop\Dev\erpcomercialsrb\bin\Debug\System.Buffers.dll
+C:\Users\Samuel R Batista\Desktop\Dev\erpcomercialsrb\bin\Debug\System.Memory.dll
+C:\Users\Samuel R Batista\Desktop\Dev\erpcomercialsrb\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Samuel R Batista\Desktop\Dev\erpcomercialsrb\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Samuel R Batista\Desktop\Dev\erpcomercialsrb\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Samuel R Batista\Desktop\Dev\erpcomercialsrb\obj\Debug\SRB-COMERCIALPDV.csproj.AssemblyReference.cache
+C:\Users\Samuel R Batista\Desktop\Dev\erpcomercialsrb\obj\Debug\SRB-COMERCIALPDV.csproj.SuggestedBindingRedirects.cache
+C:\Users\Samuel R Batista\Desktop\Dev\erpcomercialsrb\obj\Debug\SRB-COMERCIALPDV.exe.config
+C:\Users\Samuel R Batista\Desktop\Dev\erpcomercialsrb\obj\Debug\SRB_COMERCIALPDV.Properties.Resources.resources
+C:\Users\Samuel R Batista\Desktop\Dev\erpcomercialsrb\obj\Debug\SRB_COMERCIALPDV.Views.SrbFormCliente.resources
+C:\Users\Samuel R Batista\Desktop\Dev\erpcomercialsrb\obj\Debug\SRB_COMERCIALPDV.Views.SrbFormFornecedor.resources
+C:\Users\Samuel R Batista\Desktop\Dev\erpcomercialsrb\obj\Debug\SRB_COMERCIALPDV.Views.SrbFormProduto.resources
+C:\Users\Samuel R Batista\Desktop\Dev\erpcomercialsrb\obj\Debug\SRB_COMERCIALPDV.SrbFormPainel.resources
+C:\Users\Samuel R Batista\Desktop\Dev\erpcomercialsrb\obj\Debug\SRB_COMERCIALPDV.Views.SrbFormVenda.resources
+C:\Users\Samuel R Batista\Desktop\Dev\erpcomercialsrb\obj\Debug\SRB-COMERCIALPDV.csproj.GenerateResource.cache
+C:\Users\Samuel R Batista\Desktop\Dev\erpcomercialsrb\obj\Debug\SRB-COMERCIALPDV.csproj.CoreCompileInputs.cache
+C:\Users\Samuel R Batista\Desktop\Dev\erpcomercialsrb\obj\Debug\SRB-COME.1BEFA819.Up2Date
+C:\Users\Samuel R Batista\Desktop\Dev\erpcomercialsrb\obj\Debug\SRB-COMERCIALPDV.exe
+C:\Users\Samuel R Batista\Desktop\Dev\erpcomercialsrb\obj\Debug\SRB-COMERCIALPDV.pdb
+C:\Users\Samuel R Batista\Desktop\1_Workspace-Dev\C#\erpcomercialsrb\bin\Debug\SRB-COMERCIALPDV.exe.config
+C:\Users\Samuel R Batista\Desktop\1_Workspace-Dev\C#\erpcomercialsrb\bin\Debug\SRB-COMERCIALPDV.exe
+C:\Users\Samuel R Batista\Desktop\1_Workspace-Dev\C#\erpcomercialsrb\bin\Debug\SRB-COMERCIALPDV.pdb
+C:\Users\Samuel R Batista\Desktop\1_Workspace-Dev\C#\erpcomercialsrb\bin\Debug\System.Buffers.dll
+C:\Users\Samuel R Batista\Desktop\1_Workspace-Dev\C#\erpcomercialsrb\bin\Debug\System.Memory.dll
+C:\Users\Samuel R Batista\Desktop\1_Workspace-Dev\C#\erpcomercialsrb\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Samuel R Batista\Desktop\1_Workspace-Dev\C#\erpcomercialsrb\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Samuel R Batista\Desktop\1_Workspace-Dev\C#\erpcomercialsrb\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Samuel R Batista\Desktop\1_Workspace-Dev\C#\erpcomercialsrb\obj\Debug\SRB-COMERCIALPDV.csproj.AssemblyReference.cache
+C:\Users\Samuel R Batista\Desktop\1_Workspace-Dev\C#\erpcomercialsrb\obj\Debug\SRB-COMERCIALPDV.csproj.SuggestedBindingRedirects.cache
+C:\Users\Samuel R Batista\Desktop\1_Workspace-Dev\C#\erpcomercialsrb\obj\Debug\SRB-COMERCIALPDV.exe.config
+C:\Users\Samuel R Batista\Desktop\1_Workspace-Dev\C#\erpcomercialsrb\obj\Debug\SRB_COMERCIALPDV.Properties.Resources.resources
+C:\Users\Samuel R Batista\Desktop\1_Workspace-Dev\C#\erpcomercialsrb\obj\Debug\SRB_COMERCIALPDV.Views.SrbFormCliente.resources
+C:\Users\Samuel R Batista\Desktop\1_Workspace-Dev\C#\erpcomercialsrb\obj\Debug\SRB_COMERCIALPDV.Views.SrbFormFornecedor.resources
+C:\Users\Samuel R Batista\Desktop\1_Workspace-Dev\C#\erpcomercialsrb\obj\Debug\SRB_COMERCIALPDV.Views.SrbFormProduto.resources
+C:\Users\Samuel R Batista\Desktop\1_Workspace-Dev\C#\erpcomercialsrb\obj\Debug\SRB_COMERCIALPDV.SrbFormPainel.resources
+C:\Users\Samuel R Batista\Desktop\1_Workspace-Dev\C#\erpcomercialsrb\obj\Debug\SRB_COMERCIALPDV.Views.SrbFormVenda.resources
+C:\Users\Samuel R Batista\Desktop\1_Workspace-Dev\C#\erpcomercialsrb\obj\Debug\SRB-COMERCIALPDV.csproj.GenerateResource.cache
+C:\Users\Samuel R Batista\Desktop\1_Workspace-Dev\C#\erpcomercialsrb\obj\Debug\SRB-COMERCIALPDV.csproj.CoreCompileInputs.cache
+C:\Users\Samuel R Batista\Desktop\1_Workspace-Dev\C#\erpcomercialsrb\obj\Debug\SRB-COME.1BEFA819.Up2Date
+C:\Users\Samuel R Batista\Desktop\1_Workspace-Dev\C#\erpcomercialsrb\obj\Debug\SRB-COMERCIALPDV.exe
+C:\Users\Samuel R Batista\Desktop\1_Workspace-Dev\C#\erpcomercialsrb\obj\Debug\SRB-COMERCIALPDV.pdb
+C:\Users\samuk\OneDrive\Área de Trabalho\1_Workspace-Dev\C#\erpcomercialsrb\bin\Debug\SRB-COMERCIALPDV.exe.config
+C:\Users\samuk\OneDrive\Área de Trabalho\1_Workspace-Dev\C#\erpcomercialsrb\bin\Debug\SRB-COMERCIALPDV.exe
+C:\Users\samuk\OneDrive\Área de Trabalho\1_Workspace-Dev\C#\erpcomercialsrb\bin\Debug\SRB-COMERCIALPDV.pdb
+C:\Users\samuk\OneDrive\Área de Trabalho\1_Workspace-Dev\C#\erpcomercialsrb\bin\Debug\System.Buffers.dll
+C:\Users\samuk\OneDrive\Área de Trabalho\1_Workspace-Dev\C#\erpcomercialsrb\bin\Debug\System.Memory.dll
+C:\Users\samuk\OneDrive\Área de Trabalho\1_Workspace-Dev\C#\erpcomercialsrb\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\samuk\OneDrive\Área de Trabalho\1_Workspace-Dev\C#\erpcomercialsrb\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\samuk\OneDrive\Área de Trabalho\1_Workspace-Dev\C#\erpcomercialsrb\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\samuk\OneDrive\Área de Trabalho\1_Workspace-Dev\C#\erpcomercialsrb\obj\Debug\SRB-COMERCIALPDV.csproj.AssemblyReference.cache
+C:\Users\samuk\OneDrive\Área de Trabalho\1_Workspace-Dev\C#\erpcomercialsrb\obj\Debug\SRB-COMERCIALPDV.csproj.SuggestedBindingRedirects.cache
+C:\Users\samuk\OneDrive\Área de Trabalho\1_Workspace-Dev\C#\erpcomercialsrb\obj\Debug\SRB-COMERCIALPDV.exe.config
+C:\Users\samuk\OneDrive\Área de Trabalho\1_Workspace-Dev\C#\erpcomercialsrb\obj\Debug\SRB_COMERCIALPDV.Properties.Resources.resources
+C:\Users\samuk\OneDrive\Área de Trabalho\1_Workspace-Dev\C#\erpcomercialsrb\obj\Debug\SRB_COMERCIALPDV.Views.SrbFormCliente.resources
+C:\Users\samuk\OneDrive\Área de Trabalho\1_Workspace-Dev\C#\erpcomercialsrb\obj\Debug\SRB_COMERCIALPDV.Views.SrbFormFornecedor.resources
+C:\Users\samuk\OneDrive\Área de Trabalho\1_Workspace-Dev\C#\erpcomercialsrb\obj\Debug\SRB_COMERCIALPDV.Views.SrbFormProduto.resources
+C:\Users\samuk\OneDrive\Área de Trabalho\1_Workspace-Dev\C#\erpcomercialsrb\obj\Debug\SRB_COMERCIALPDV.SrbFormPainel.resources
+C:\Users\samuk\OneDrive\Área de Trabalho\1_Workspace-Dev\C#\erpcomercialsrb\obj\Debug\SRB_COMERCIALPDV.Views.SrbFormVenda.resources
+C:\Users\samuk\OneDrive\Área de Trabalho\1_Workspace-Dev\C#\erpcomercialsrb\obj\Debug\SRB-COMERCIALPDV.csproj.GenerateResource.cache
+C:\Users\samuk\OneDrive\Área de Trabalho\1_Workspace-Dev\C#\erpcomercialsrb\obj\Debug\SRB-COMERCIALPDV.csproj.CoreCompileInputs.cache
+C:\Users\samuk\OneDrive\Área de Trabalho\1_Workspace-Dev\C#\erpcomercialsrb\obj\Debug\SRB-COME.1BEFA819.Up2Date
+C:\Users\samuk\OneDrive\Área de Trabalho\1_Workspace-Dev\C#\erpcomercialsrb\obj\Debug\SRB-COMERCIALPDV.exe
+C:\Users\samuk\OneDrive\Área de Trabalho\1_Workspace-Dev\C#\erpcomercialsrb\obj\Debug\SRB-COMERCIALPDV.pdb
+C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\bin\Debug\SRB-COMERCIALPDV.exe.config
+C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\bin\Debug\SRB-COMERCIALPDV.exe
+C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\bin\Debug\SRB-COMERCIALPDV.pdb
+C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\bin\Debug\System.Buffers.xml
+C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\bin\Debug\System.Memory.xml
+C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\obj\Debug\SRB-COMERCIALPDV.csproj.AssemblyReference.cache
+C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\obj\Debug\SRB-COMERCIALPDV.csproj.SuggestedBindingRedirects.cache
+C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\obj\Debug\SRB-COMERCIALPDV.exe.config
+C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\obj\Debug\SRB_COMERCIALPDV.Properties.Resources.resources
+C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\obj\Debug\SRB_COMERCIALPDV.Views.SrbFormCliente.resources
+C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\obj\Debug\SRB_COMERCIALPDV.Views.SrbFormFornecedor.resources
+C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\obj\Debug\SRB_COMERCIALPDV.Views.SrbFormProduto.resources
+C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\obj\Debug\SRB_COMERCIALPDV.SrbFormPainel.resources
+C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\obj\Debug\SRB_COMERCIALPDV.Views.SrbFormVenda.resources
+C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\obj\Debug\SRB-COMERCIALPDV.csproj.GenerateResource.cache
+C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\obj\Debug\SRB-COMERCIALPDV.csproj.CoreCompileInputs.cache
+C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\obj\Debug\SRB-COME.1BEFA819.Up2Date
+C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\obj\Debug\SRB-COMERCIALPDV.exe
+C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\obj\Debug\SRB-COMERCIALPDV.pdb
