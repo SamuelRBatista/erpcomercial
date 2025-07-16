@@ -30,56 +30,29 @@ namespace SRB_COMERCIALPDV.Views
         private PrintDialog printDialog;
         private PrintPreviewDialog printPreview;
 
-
         public SrbFormVenda()
         {
             InitializeComponent();
+      
             produtoController = new SrbProdutoController();
             vendaController = new SrbVendaController();
             categoriaController = new SrbCategoriaController();
+            this.txtEan.KeyDown += new KeyEventHandler(this.txtEan_KeyDown);
         }
 
-        public SrbFormVenda(SrbFormProduto formProduto)
+        public SrbFormVenda(SrbFormProduto formProduto) : this()
         {
-            InitializeComponent();
             this.formProduto = formProduto;
         }
 
         private void SrbFormVenda_Load(object sender, EventArgs e)
         {
-            ConfiguraGridViewVendas();         
+            ConfiguraGridViewVendas();
         }
 
-        private void txtEan_TextChanged(object sender, EventArgs e)
-        {
-            string ean = txtEan.Text.Trim();
+    
 
-            List<SrbProduto> produtos = produtoController.BuscarProdutoPorEan(ean);
 
-            if (produtos != null && produtos.Count > 0)
-            {
-                SrbProduto produto = produtos[0];
-                if (produto.SrbQuantidade > 0)
-                {
-                    txtId.Text = produto.SrbID.ToString();
-                    txtCod.Text = produto.SrbCod.ToString();
-                    txtNome.Text = produto.SrbNome;
-                    txtDescricao.Text = produto.SrbDescricao;
-                    txtPreco.Text = produto.SrbPreco.ToString("C2", CultureInfo.GetCultureInfo("pt-BR"));
-                }
-                else
-                {
-                    MessageBox.Show("Estoque zerado não possui produto para venda", "Erro de entrada", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    LimparCamposFormulario();
-                    txtEan.Focus();
-                    return;
-                }
-            }
-            else
-            {
-                LimparCamposFormulario();
-            }
-        }
 
         private void LimparCamposFormulario()
         {
@@ -89,7 +62,6 @@ namespace SRB_COMERCIALPDV.Views
             txtDescricao.Text = "";
             txtPreco.Text = "";
             txtQuantidade.Text = "";
-            // txtTotal.Text = ""; // ← agora deixamos isso fora
         }
 
         private void btnAdicionar_Click(object sender, EventArgs e)
@@ -217,7 +189,6 @@ namespace SRB_COMERCIALPDV.Views
                     }
                 }
 
-                // Monta o conteúdo do cupom fiscal
                 StringBuilder cupom = new StringBuilder();
                 cupom.AppendLine("         SRB COMERCIAL - CUPOM FISCAL");
                 cupom.AppendLine("============================================");
@@ -342,6 +313,56 @@ namespace SRB_COMERCIALPDV.Views
             {
                 e.Graphics.DrawString(linha, fonte, Brushes.Black, 10, linhaY);
                 linhaY += 20;
+            }
+        }
+
+        private void txtEan_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                string ean = txtEan.Text.Trim();
+
+                if (string.IsNullOrWhiteSpace(ean))
+                    return;
+
+                List<SrbProduto> produtos = produtoController.BuscarProdutoPorEan(ean);
+
+                if (produtos != null && produtos.Count > 0)
+                {
+                    SrbProduto produto = produtos[0];
+                    if (produto.SrbQuantidade > 0)
+                    {
+                        txtId.Text = produto.SrbID.ToString();
+                        txtCod.Text = produto.SrbCod.ToString();
+                        txtNome.Text = produto.SrbNome;
+                        txtDescricao.Text = produto.SrbDescricao;
+                        txtPreco.Text = produto.SrbPreco.ToString("C2", CultureInfo.GetCultureInfo("pt-BR"));
+
+                        // Quantidade padrão como 1
+                        txtQuantidade.Text = "1";
+
+                        // Adicionar automaticamente à venda
+                        btnAdicionar.PerformClick();
+
+                        // Limpar para próximo EAN
+                        txtEan.Clear();
+                        txtEan.Focus();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Estoque zerado, não há produto para venda.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        LimparCamposFormulario();
+                        txtEan.Focus();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Produto não encontrado!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    LimparCamposFormulario();
+                    txtEan.Focus();
+                }
+
+                e.SuppressKeyPress = true; // evita beep do Enter
             }
         }
     }

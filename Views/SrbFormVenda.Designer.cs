@@ -32,7 +32,6 @@
             this.txtQuantidade = new System.Windows.Forms.TextBox();
             this.btnAdicionar = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
-            this.txtEan = new System.Windows.Forms.TextBox();
             this.lblEan = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.dataGridViewVendas = new System.Windows.Forms.DataGridView();
@@ -54,6 +53,7 @@
             this.lblTotal = new System.Windows.Forms.Label();
             this.txtTotal = new System.Windows.Forms.Label();
             this.txtPreco = new System.Windows.Forms.TextBox();
+            this.txtEan = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVendas)).BeginInit();
             this.SrbVendas.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -99,16 +99,6 @@
             this.btnFechar.UseVisualStyleBackColor = true;
             this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
-            // txtEan
-            // 
-            this.txtEan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtEan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEan.Location = new System.Drawing.Point(12, 113);
-            this.txtEan.Name = "txtEan";
-            this.txtEan.Size = new System.Drawing.Size(222, 26);
-            this.txtEan.TabIndex = 34;
-            this.txtEan.TextChanged += new System.EventHandler(this.txtEan_TextChanged);
-            // 
             // lblEan
             // 
             this.lblEan.AutoSize = true;
@@ -148,7 +138,7 @@
             this.SrbVendas.Dock = System.Windows.Forms.DockStyle.Top;
             this.SrbVendas.Location = new System.Drawing.Point(0, 0);
             this.SrbVendas.Name = "SrbVendas";
-            this.SrbVendas.Size = new System.Drawing.Size(1135, 72);
+            this.SrbVendas.Size = new System.Drawing.Size(1148, 72);
             this.SrbVendas.TabIndex = 30;
             // 
             // btnConfirmaVenda
@@ -324,11 +314,22 @@
             this.txtPreco.Size = new System.Drawing.Size(223, 26);
             this.txtPreco.TabIndex = 71;
             // 
+            // txtEan
+            // 
+            this.txtEan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtEan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEan.Location = new System.Drawing.Point(12, 113);
+            this.txtEan.Name = "txtEan";
+            this.txtEan.Size = new System.Drawing.Size(223, 26);
+            this.txtEan.TabIndex = 79;
+            this.txtEan.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtEan_KeyDown);
+            // 
             // SrbFormVenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1135, 545);
+            this.ClientSize = new System.Drawing.Size(1148, 537);
+            this.Controls.Add(this.txtEan);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtCod);
             this.Controls.Add(this.label3);
@@ -344,7 +345,6 @@
             this.Controls.Add(this.txtQuantidade);
             this.Controls.Add(this.btnAdicionar);
             this.Controls.Add(this.btnFechar);
-            this.Controls.Add(this.txtEan);
             this.Controls.Add(this.lblEan);
             this.Controls.Add(this.dataGridViewVendas);
             this.Controls.Add(this.SrbVendas);
@@ -369,7 +369,6 @@
         private System.Windows.Forms.TextBox txtQuantidade;
         private System.Windows.Forms.Button btnAdicionar;
         private System.Windows.Forms.Button btnFechar;
-        private System.Windows.Forms.TextBox txtEan;
         private System.Windows.Forms.Label lblEan;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.DataGridView dataGridViewVendas;
@@ -391,5 +390,6 @@
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Label txtTotal;
         private System.Windows.Forms.TextBox txtPreco;
+        public System.Windows.Forms.TextBox txtEan;
     }
 }
