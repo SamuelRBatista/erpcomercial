@@ -3,6 +3,7 @@ using Mysqlx.Datatypes;
 using SRB_COMERCIALPDV.Controllers;
 using SRB_COMERCIALPDV.Helpers;
 using SRB_COMERCIALPDV.Models;
+using SRB_COMERCIALPDV.Services;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -10,6 +11,7 @@ using System.Drawing;
 using System.Globalization;
 using System.Linq;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace SRB_COMERCIALPDV.Views
 {
@@ -17,7 +19,9 @@ namespace SRB_COMERCIALPDV.Views
     {
         private SrbProdutoController produtoController;
         private SrbCategoriaController categoriaController;
-       
+
+        private NotaFiscalService notaFiscalService;
+
 
         public SrbFormProduto()
         {
@@ -25,6 +29,7 @@ namespace SRB_COMERCIALPDV.Views
 
             produtoController = new SrbProdutoController();
             categoriaController = new SrbCategoriaController();
+            notaFiscalService = new NotaFiscalService();
             ConfigurarDataGridView();
             ConfigurarComboBoxCategorias();
             RecarregarProdutos();
@@ -169,6 +174,12 @@ namespace SRB_COMERCIALPDV.Views
                 MessageBox.Show("Selecione um produto para deletar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+      
+
+
+
+
         #endregion
 
         #region
@@ -361,5 +372,28 @@ namespace SRB_COMERCIALPDV.Views
             }
         }
         #endregion
+
+        private void btnImportarXml_Click_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Arquivos XML|*.xml";
+            openFileDialog.Title = "Selecione o XML da Nota Fiscal";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    notaFiscalService.ImportarProdutosDoXml(openFileDialog.FileName);
+
+                    MessageBox.Show("Produtos importados com sucesso!", "Importação de XML", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    RecarregarProdutos(); 
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Erro ao importar produtos: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
     }
 }

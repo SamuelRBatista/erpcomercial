@@ -62,6 +62,7 @@
             this.btnBuscaNome = new System.Windows.Forms.Button();
             this.btnBuscarEan = new System.Windows.Forms.Button();
             this.btnBuscaCodigo = new System.Windows.Forms.Button();
+            this.btnImportarXml_Click = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProdutos)).BeginInit();
             this.SuspendLayout();
@@ -382,11 +383,22 @@
             this.btnBuscaCodigo.UseVisualStyleBackColor = false;
             this.btnBuscaCodigo.Click += new System.EventHandler(this.btnBuscaCodigo_Click);
             // 
+            // btnImportarXml_Click
+            // 
+            this.btnImportarXml_Click.Location = new System.Drawing.Point(23, 176);
+            this.btnImportarXml_Click.Name = "btnImportarXml_Click";
+            this.btnImportarXml_Click.Size = new System.Drawing.Size(75, 23);
+            this.btnImportarXml_Click.TabIndex = 30;
+            this.btnImportarXml_Click.Text = "Importar Xml";
+            this.btnImportarXml_Click.UseVisualStyleBackColor = true;
+            this.btnImportarXml_Click.Click += new System.EventHandler(this.btnImportarXml_Click_Click);
+            // 
             // SrbFormProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1137, 545);
+            this.Controls.Add(this.btnImportarXml_Click);
             this.Controls.Add(this.btnBuscaNome);
             this.Controls.Add(this.txtCest);
             this.Controls.Add(this.btnBuscarEan);
@@ -466,5 +478,6 @@
         private System.Windows.Forms.Button btnBuscarEan;
         private System.Windows.Forms.Button btnBuscaNome;
         private System.Windows.Forms.Button btnBuscaCodigo;
+        private System.Windows.Forms.Button btnImportarXml_Click;
     }
 }

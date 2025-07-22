@@ -120,6 +120,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Services\NotaFiscalService.cs" />
     <Compile Include="Services\SrbCidadeService.cs" />
     <Compile Include="Services\SrbEstadoService.cs" />
     <Compile Include="Services\SrbClienteService.cs" />

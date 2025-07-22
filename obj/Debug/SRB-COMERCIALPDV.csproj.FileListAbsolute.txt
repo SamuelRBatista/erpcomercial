@@ -171,8 +171,6 @@ C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\bin\Debug\SRB-COMERCIALPDV.exe
 C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\bin\Debug\SRB-COMERCIALPDV.exe
 C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\bin\Debug\SRB-COMERCIALPDV.pdb
 C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\bin\Debug\System.Buffers.xml
-C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\bin\Debug\System.Memory.xml
-C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\obj\Debug\SRB-COMERCIALPDV.csproj.AssemblyReference.cache
@@ -189,3 +187,5 @@ C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\obj\Debug\SRB-COMERCIALPDV.csp
 C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\obj\Debug\SRB-COME.1BEFA819.Up2Date
 C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\obj\Debug\SRB-COMERCIALPDV.exe
 C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\obj\Debug\SRB-COMERCIALPDV.pdb
+C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\bin\Debug\System.Memory.dll
+C:\Users\samuk\OneDrive\Desktop\6-erpcomercialsrb\bin\Debug\System.Numerics.Vectors.dll
